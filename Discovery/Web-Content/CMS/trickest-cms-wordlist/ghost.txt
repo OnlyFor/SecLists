@@ -2282,6 +2282,7 @@ ghost/core/core/server/data/migrations/versions/4.20/04-add-offer-redemptions-ta
 ghost/core/core/server/data/migrations/versions/4.20/02-remove-offers-table.js
 ghost/core/core/server/data/migrations/versions/4.20/03-add-offers-table.js
 ghost/core/core/server/data/migrations/versions/4.20/05-remove-not-null-constraint-from-portal-title.js
+ghost/core/core/server/data/migrations/versions/5.85/2024-06-10-14-53-31-add-posts-updated-at-index.js
 ghost/core/core/server/data/migrations/versions/2.37/01-final-v2.js
 ghost/core/core/server/data/migrations/versions/4.9/01-add-reset-all-passwords-permission.js
 ghost/core/core/server/data/migrations/versions/4.9/03-add-products-benefits-table.js
@@ -3135,6 +3136,7 @@ ghost/admin/mirage/factories/offer.js
 ghost/admin/mirage/factories/user.js
 ghost/admin/mirage/factories/subscription.js
 ghost/admin/mirage/factories/invite.js
+ghost/admin/mirage/factories/page.js
 ghost/admin/mirage/factories/api-key.js
 ghost/admin/mirage/factories/member-activity-event.js
 ghost/admin/mirage/factories/tag.js
@@ -3895,8 +3897,10 @@ ghost/admin/app/services/onboarding.js
 ghost/admin/app/services/custom-theme-settings.js
 ghost/admin/app/services/members-utils.js
 ghost/admin/app/services/migrate.js
+ghost/admin/app/services/search-provider-beta.js
 ghost/admin/app/services/dashboard-stats.js
 ghost/admin/app/services/unsplash.js
+ghost/admin/app/services/search-provider.js
 ghost/admin/app/services/clock.js
 ghost/admin/app/services/ui.js
 ghost/admin/app/services/explore.js
@@ -4149,6 +4153,10 @@ ghost/i18n/locales/eo/ghost.json
 ghost/i18n/locales/eo/portal.json
 ghost/i18n/locales/eo/comments.json
 ghost/i18n/locales/eo/signup-form.json
+ghost/i18n/locales/bs/ghost.json
+ghost/i18n/locales/bs/portal.json
+ghost/i18n/locales/bs/comments.json
+ghost/i18n/locales/bs/signup-form.json
 ghost/i18n/locales/th/ghost.json
 ghost/i18n/locales/th/portal.json
 ghost/i18n/locales/th/comments.json
@@ -4166,6 +4174,10 @@ ghost/i18n/locales/nn/portal.json
 ghost/i18n/locales/nn/comments.json
 ghost/i18n/locales/nn/signup-form.json
 ghost/i18n/locales/context.json
+ghost/i18n/locales/el/ghost.json
+ghost/i18n/locales/el/portal.json
+ghost/i18n/locales/el/comments.json
+ghost/i18n/locales/el/signup-form.json
 ghost/i18n/locales/fr/ghost.json
 ghost/i18n/locales/fr/portal.json
 ghost/i18n/locales/fr/comments.json
@@ -4443,6 +4455,7 @@ ghost/data-generator/lib/importers/MembersStripeCustomersSubscriptionsImporter.j
 ghost/data-generator/lib/importers/MembersClickEventsImporter.js
 ghost/data-generator/lib/importers/MembersNewslettersImporter.js
 ghost/data-generator/lib/importers/NewslettersImporter.js
+ghost/data-generator/lib/importers/CommentsImporter.js
 ghost/data-generator/lib/importers/LabelsImporter.js
 ghost/data-generator/lib/importers/WebMentionsImporter.js
 ghost/data-generator/lib/importers/StripePricesImporter.js
